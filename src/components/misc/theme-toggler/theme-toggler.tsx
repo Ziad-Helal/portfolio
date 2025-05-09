@@ -7,7 +7,6 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { useIsMounted } from "@/hooks";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
-import { toast } from "sonner";
 
 export default function ThemeToggler() {
   const isMounted = useIsMounted();
@@ -25,14 +24,7 @@ export default function ThemeToggler() {
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         {themes.map((theme) => (
-          <DropdownMenuItem
-            key={theme}
-            className={cn(theme == currentTheme ? "bg-accent" : "")}
-            onClick={() => {
-              setTheme(theme);
-              toast.error("Locale changed");
-            }}
-          >
+          <DropdownMenuItem key={theme} className={cn(theme == currentTheme ? "bg-accent" : "")} onClick={() => setTheme(theme)}>
             {theme == "system" ? <MonitorIcon /> : theme == "dark" ? <MoonIcon /> : <SunIcon />}
             {t(`themes.${theme as "light" | "dark" | "system"}`)}
           </DropdownMenuItem>
