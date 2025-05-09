@@ -1,0 +1,16 @@
+{
+  "colorTheme": {
+    "tooltip": "غير الألوان",
+    "themes": {
+      "light": "فاتح",
+      "dark": "داكن",
+      "system": "النظام"
+    }
+  },
+  "locale": {
+    "tooltip": "غير اللغة"
+  },
+  "keyWords": {
+    "loading": "جار التحميل"
+  }
+}

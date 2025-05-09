@@ -1,0 +1,16 @@
+{
+  "colorTheme": {
+    "tooltip": "change the color theme",
+    "themes": {
+      "light": "light",
+      "dark": "dark",
+      "system": "system"
+    }
+  },
+  "locale": {
+    "tooltip": "change the language"
+  },
+  "keyWords": {
+    "loading": "loading"
+  }
+}
