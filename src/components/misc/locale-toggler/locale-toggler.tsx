@@ -24,7 +24,7 @@ export default function LocaleToggler() {
           <span className="sr-only">{t("tooltip")}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="start">
+      <DropdownMenuContent align="end">
         {locales.map((locale) => (
           <DropdownMenuItem key={locale} onClick={() => router.replace(pathname, { locale })} isChoosen={locale == currentLocale}>
             <span className="uppercase font-light">{locale}</span>

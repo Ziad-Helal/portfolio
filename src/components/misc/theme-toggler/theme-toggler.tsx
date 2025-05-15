@@ -22,7 +22,7 @@ export default function ThemeToggler() {
           {t("tooltip")}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent align="end">
         {themes.map((theme) => (
           <DropdownMenuItem key={theme} className={cn(theme == currentTheme ? "bg-accent" : "")} onClick={() => setTheme(theme)}>
             {theme == "system" ? <MonitorIcon /> : theme == "dark" ? <MoonIcon /> : <SunIcon />}

@@ -1,4 +1,17 @@
 {
+  "header": {
+    "aria": "رأس الصفحة"
+  },
+  "navigationMenu": {
+    "trigger": "فتح قائمة التنقل الرئيسية",
+    "title": "قائمة التنقل",
+    "description": "قائمة التنقل الرئيسية",
+    "routes": {
+      "home": "الرئيسية",
+      "about": "عني",
+      "contact": "اتصل بي"
+    }
+  },
   "colorTheme": {
     "tooltip": "غير الألوان",
     "themes": {
@@ -11,6 +24,9 @@
     "tooltip": "غير اللغة"
   },
   "keyWords": {
-    "loading": "جار التحميل"
+    "close": "إغلاق",
+    "loading": "جار التحميل",
+    "description": "وصف",
+    "toTop": "الذهاب للأعلى"
   }
 }

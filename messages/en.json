@@ -1,4 +1,17 @@
 {
+  "header": {
+    "aria": "page header"
+  },
+  "navigationMenu": {
+    "trigger": "open main navigation",
+    "title": "navigation",
+    "description": "main navigation menu",
+    "routes": {
+      "home": "home",
+      "about": "about",
+      "contact": "contact"
+    }
+  },
   "colorTheme": {
     "tooltip": "change the color theme",
     "themes": {
@@ -11,6 +24,9 @@
     "tooltip": "change the language"
   },
   "keyWords": {
-    "loading": "loading"
+    "close": "close",
+    "loading": "loading",
+    "description": "description",
+    "toTop": "scroll to top"
   }
 }

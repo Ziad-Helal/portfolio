@@ -3,7 +3,7 @@ import { Button as ClassicButton, Tooltip, TooltipContent, TooltipTrigger, type 
 import { cn } from "@/lib/utils";
 import { cva } from "class-variance-authority";
 import type { LucideIcon } from "lucide-react";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 const iconSizeVariants = cva("", {
   variants: {

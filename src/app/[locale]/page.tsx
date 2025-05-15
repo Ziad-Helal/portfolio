@@ -1,10 +1,9 @@
-import { LocaleToggler, ThemeToggler } from "@/components";
+import { Container } from "./components";
 
 export default function Home() {
   return (
-    <main>
-      <ThemeToggler />
-      <LocaleToggler />
-    </main>
+    <>
+      <Container>Home</Container>
+    </>
   );
 }

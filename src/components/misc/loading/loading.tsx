@@ -14,8 +14,8 @@ export default function Loading({ className, iconClassName, loadingText, isFullP
   const t = useTranslations("keyWords");
 
   return (
-    <span className={cn("flex items-center justify-center gap-2 capitalize", isFullPage ? "h-svh text-xl" : "", className)}>
-      <LoaderCircleIcon className={cn("animate-spin h-full aspect-square", iconClassName)} aria-hidden />
+    <span className={cn("flex items-center justify-center gap-2 capitalize", isFullPage ? "size-full absolute top-0 left-0 text-xl bg-background/50" : "", className)}>
+      <LoaderCircleIcon className={cn("animate-spin aspect-square h-full", isFullPage ? "size-9" : "", iconClassName)} aria-hidden />
       {loadingText || <span className="sr-only">{t("loading")}</span>}
     </span>
   );

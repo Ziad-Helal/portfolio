@@ -115,6 +115,8 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklab, var(--foreground) 25%, transparent) var(--secondary);
   }
   body {
     @apply bg-background text-foreground;
