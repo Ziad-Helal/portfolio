@@ -77,3 +77,5 @@ export default function Button({
     btn
   );
 }
+
+export type ButtonType = typeof Button;

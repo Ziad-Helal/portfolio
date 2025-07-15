@@ -46,4 +46,4 @@ function Button({
 }
 
 export { Button, buttonVariants };
-export interface ButtonProps extends ComponentProps<typeof Button> {}
+export type ButtonProps = ComponentProps<typeof Button>;

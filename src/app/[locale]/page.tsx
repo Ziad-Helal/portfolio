@@ -1,9 +1,12 @@
-import { Container } from "./components";
+import { About_Section, Contact_Section, Hero_Section, Projects_Section } from "./components";
 
 export default function Home() {
   return (
     <>
-      <Container>Home</Container>
+      <Hero_Section />
+      <About_Section />
+      <Projects_Section />
+      <Contact_Section />
     </>
   );
 }

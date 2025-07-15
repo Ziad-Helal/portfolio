@@ -1,6 +1,7 @@
 {
   "header": {
-    "aria": "page header"
+    "aria": "page header",
+    "logo": "Ziad"
   },
   "navigationMenu": {
     "trigger": "open main navigation",
@@ -9,6 +10,7 @@
     "routes": {
       "home": "home",
       "about": "about",
+      "projects": "projects",
       "contact": "contact"
     }
   },
@@ -23,10 +25,34 @@
   "locale": {
     "tooltip": "change the language"
   },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "1": "Hey, I am",
+        "2": "Ziad,",
+        "3": "a",
+        "4": "frontend",
+        "5": "web developer."
+      },
+      "about": {
+        "heading": "Who is Ziad?",
+        "1": "I graduated from the faculty of science at",
+        "2": "Helwan University",
+        "3": "in 2022 with a bachelor's degree in",
+        "4": "Statistics and Computer Science.",
+        "5": "My journy in frontend web development started way before I graduated. I love my job and I'm always looking for new challenges.",
+        "6": "I like to solve problems and I'm always looking for new opportunities to learn and grow. I like to give a big attention to details, to edge cases, and to the accessibility of the applications I build. I like to create fast performant applications that are easy to use and that are accessible to everyone."
+      }
+    }
+  },
   "keyWords": {
     "close": "close",
     "loading": "loading",
     "description": "description",
-    "toTop": "scroll to top"
+    "toTop": "scroll to top",
+    "copyToClipboard": "Copy to clipboard"
   }
 }

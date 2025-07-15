@@ -7,7 +7,6 @@ import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import languages from "@/constants/languages";
-import { toast } from "sonner";
 
 export default function LocaleToggler() {
   const t = useTranslations("locale");

@@ -12,7 +12,8 @@ export default function ThemeToggler() {
   const isMounted = useIsMounted();
   const { setTheme, themes, resolvedTheme, theme: currentTheme } = useTheme();
   const t = useTranslations("colorTheme");
-  // Solving the issue of loading the icon before the theme is mounted
+
+  // For Hydration
   const icon = isMounted ? (resolvedTheme == "dark" ? MoonIcon : SunIcon) : LoaderCircleIcon;
 
   return (
