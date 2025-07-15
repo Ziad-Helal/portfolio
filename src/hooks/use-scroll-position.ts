@@ -17,7 +17,9 @@ const setPosition = ({ x, y }: { x?: number; y?: number }) => {
 export default function useScrollPosition(): [{ x: number; y: number }, typeof setPosition] {
   const [currentPosition, setCurrentPosition] = useState(getPosition());
 
-  ["scroll", "resize"].forEach((item) => useEventListener(item, () => setCurrentPosition(getPosition())));
+  // ["scroll", "resize"].forEach((item) => useEventListener(item, () => setCurrentPosition(getPosition())));
+  useEventListener("scroll", () => setCurrentPosition(getPosition()));
+  useEventListener("resize", () => setCurrentPosition(getPosition()));
 
   return [currentPosition, setPosition];
 }

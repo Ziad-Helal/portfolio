@@ -1,6 +1,7 @@
 import { type RefObject, useEffect, useRef } from "react";
 import { useIsomorphicLayoutEffect } from "./use-effect";
 
+// eslint-disable-next-line
 export default function useEventListener(eventName: string, handler: (e: Event) => any, element?: RefObject<any>) {
   const savedHandler = useRef(handler);
 

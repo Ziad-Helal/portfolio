@@ -1,6 +1,5 @@
 import { useFormatter, useTranslations } from "next-intl";
 import { Container } from "../../components";
-import { Wave } from "@/components/animated";
 
 export default function Footer() {
   const t = useTranslations("footer");

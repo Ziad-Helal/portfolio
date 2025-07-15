@@ -48,7 +48,7 @@ export default function FallingText({
       .join(" ");
 
     textRef.current.innerHTML = newHTML;
-  }, [text, highlightWords]);
+  }, [text, highlightWords, asTags]);
 
   useEffect(() => {
     if (trigger === "auto") {
@@ -73,9 +73,10 @@ export default function FallingText({
   useEffect(() => {
     if (!effectStarted) return;
 
+    const canvas = canvasContainerRef.current;
     const { Engine, Render, World, Bodies, Runner, Mouse, MouseConstraint } = Matter;
 
-    if (!containerRef.current || !canvasContainerRef.current) return;
+    if (!containerRef.current || !canvas) return;
 
     const containerRect = containerRef.current.getBoundingClientRect();
     const width = containerRect.width;
@@ -87,7 +88,7 @@ export default function FallingText({
     engine.world.gravity.y = gravity;
 
     const render = Render.create({
-      element: canvasContainerRef.current,
+      element: canvas,
       engine,
       options: {
         width,
@@ -167,8 +168,8 @@ export default function FallingText({
     return () => {
       Render.stop(render);
       Runner.stop(runner);
-      if (render.canvas && canvasContainerRef.current) {
-        canvasContainerRef.current.removeChild(render.canvas);
+      if (render.canvas && canvas) {
+        canvas.removeChild(render.canvas);
       }
       World.clear(engine.world, false);
       Engine.clear(engine);

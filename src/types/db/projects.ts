@@ -30,4 +30,6 @@ export interface ProjectDemo {
   repo?: string;
 }
 
-export interface Project {}
+export interface Project {
+  any?: string;
+}

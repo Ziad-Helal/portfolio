@@ -111,7 +111,7 @@ export default function TextPressure({
 
     addEventListener("resize", setSize);
     return () => removeEventListener("resize", setSize);
-  }, [scale, text]);
+  }, [scale, text, chars, minFontSize]);
 
   useEffect(() => {
     let rafId: number;
