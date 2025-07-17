@@ -7,7 +7,7 @@ export default function Header() {
   const t = useTranslations("header");
 
   return (
-    <header className="grid items-center border-b h-14 fixed top-0 w-[calc(100vw-10px)] z-50 bg-transparent backdrop-blur-xs shadow-lg" aria-label={t("aria")}>
+    <header className="grid items-center border-b h-14 fixed top-0 w-[calc(100vw-10px)] z-51 bg-transparent backdrop-blur-xs shadow-lg" aria-label={t("aria")}>
       <Container className="flex items-center justify-between mx-auto">
         <h1 className="text-2xl font-medium uppercase">
           <Link href="/">{t("logo")}</Link>

@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getLangDir } from "rtl-detect";
 import { Theme } from "@/store";
-import { SplashCursor } from "@/components/animated";
+// import { SplashCursor } from "@/components/animated";
 import { Toaster, TooltipProvider } from "@/components/ui";
 import { ScrollToTop } from "@/components";
 import { Footer, Header } from "./components";
@@ -23,7 +23,7 @@ export default async function RootLayout({ children, params }: { children: React
       <body className="min-h-svh flex flex-col">
         <NextIntlClientProvider>
           <Theme attribute="class" defaultTheme="system" themes={["light", "dark"]} enableSystem disableTransitionOnChange>
-            <SplashCursor SPLAT_RADIUS={0.1} SPLAT_FORCE={3000} />
+            {/* <SplashCursor SPLAT_RADIUS={0.1} SPLAT_FORCE={3000} /> */}
             <TooltipProvider>
               <Header />
               <main className="flex-auto relative overflow-hidden">{children}</main>
