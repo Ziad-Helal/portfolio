@@ -1,5 +1,5 @@
 import contacts from "@/constants/contacts";
-import { Section } from "../../components";
+import { Section } from "@/app/[locale]/components";
 import { Contact_Card } from "./components";
 
 export default function Contact_Section() {

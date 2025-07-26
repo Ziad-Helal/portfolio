@@ -1,5 +1,5 @@
-import { homeProjects } from "../../../../../db";
-import { Section } from "../../components";
+import { homeProjects } from "@/../db";
+import { Section } from "@/app/[locale]/components";
 import { Project_Card } from "./components";
 
 export default function Projects_Section() {

@@ -1,16 +1,13 @@
 import { About_Card } from "@/components";
+import { SingleEducation } from "./components";
+import { homeEducation } from "@/../db";
 
 export default function Education() {
   return (
     <About_Card title="Education" containerClassName="text-lg [&_span]:text-muted-foreground">
-      <p>
-        <span>Bachelor of:</span> Statistics and Computer Science
-      </p>
-      <p>
-        <span>From the</span> Faculty Of Science, Helwan University
-      </p>
-      <p></p>
-      <p className="text-muted-foreground">2022</p>
+      {homeEducation.map((singleEducation) => (
+        <SingleEducation key={singleEducation.id} singleEducation={singleEducation} />
+      ))}
     </About_Card>
   );
 }

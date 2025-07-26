@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Section } from "../../components";
+import { Section } from "@/app/[locale]/components";
 import { Courses, Education, Experience } from "./components";
 
 export default function About_Section() {

@@ -1,5 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
-import { Container } from "../../components";
+import { Container } from "@/app/[locale]/components";
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern, TextAnimate, TextPressure } from "@/components/animated";
 

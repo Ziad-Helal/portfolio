@@ -12,7 +12,7 @@ export default function About_Card({ title, containerClassName, children }: Abou
   return (
     <MotionEffect slide={{ direction: "down", offset: 200 }} inView>
       <Basic_Card>
-        <h3 className="text-2xl sm:text-4xl font-medium mb-1 sm:mb-2">
+        <h3 className="text-2xl sm:text-4xl font-medium mb-2 sm:mb-3">
           <AuroraText>{title}</AuroraText>
         </h3>
         <div className={containerClassName}>{children}</div>
