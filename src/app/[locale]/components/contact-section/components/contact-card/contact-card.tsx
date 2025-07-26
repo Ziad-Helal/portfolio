@@ -1,8 +1,8 @@
 import { Link } from "@/i18n/navigation";
-import { CopyButton } from "@/components";
-import { cn } from "@/lib/utils";
-import { getLocale } from "next-intl/server";
-import { getLangDir } from "rtl-detect";
+// import { CopyButton } from "@/components";
+// import { cn } from "@/lib/utils";
+// import { getLocale } from "next-intl/server";
+// import { getLangDir } from "rtl-detect";
 import type { Contact } from "@/constants/contacts";
 
 interface Contact_Card_Props {
@@ -10,9 +10,9 @@ interface Contact_Card_Props {
 }
 
 export default async function Contact_Card({ contact }: Contact_Card_Props) {
-  const { title, hint, link, icon: Icon, PrimaryColor } = contact;
-  const locale = await getLocale();
-  const dir = getLangDir(locale);
+  const { hint, link, icon: Icon, PrimaryColor } = contact;
+  // const locale = await getLocale();
+  // const dir = getLangDir(locale);
 
   return (
     <Link href={link} className="border-2 rounded-full p-2 sm:p-4 w-fit flex items-center justify-center" style={{ borderColor: PrimaryColor }}>
