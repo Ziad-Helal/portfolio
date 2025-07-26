@@ -1,4 +1,4 @@
-import type { EducationDemo, ExperienceDemo, ProjectDemo } from "@/types";
+import type { CourseDemo, EducationDemo, ExperienceDemo, ProjectDemo } from "@/types";
 
 export const homeExperience: ExperienceDemo[] = [
   {
@@ -46,7 +46,35 @@ export const homeEducation: EducationDemo[] = [
   },
 ];
 
-export const homeCourses = [];
+export const homeCourses: CourseDemo[] = [
+  {
+    id: "1",
+    name: "Frontend Web Development",
+    institution: "Route Academy",
+  },
+  {
+    id: "2",
+    name: "React - The Complete Guide",
+    institution: "Maximilian Schwarzmüller",
+  },
+  {
+    id: "3",
+    name: "Frontend Web Development - Professional (Nanodegree Program)",
+    institution: "Udacity",
+  },
+  {
+    id: "4",
+    name: "Frontend Web Development - Challenger (Nanodegree Program)",
+    institution: "Udacity",
+  },
+  {
+    id: "5",
+    name: "CS50's Understanding Technology",
+    institution: "Harvard University",
+  },
+];
+
+export const homeCertificates = [];
 
 export const homeProjects: ProjectDemo[] = [
   {
