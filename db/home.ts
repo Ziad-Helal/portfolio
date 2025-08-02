@@ -79,17 +79,15 @@ export const homeCertificates = [];
 export const homeProjects: ProjectDemo[] = [
   {
     id: "1",
-    title: "Title 1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus, eaque recusandae libero at rem aliquid fugiat beatae earum velit id accusamus facilis ea, itaque soluta culpa reprehenderit illum corrupti!",
+    title: "Roze Moon",
+    description: "A flower e-commerce platform for merchants. Supports localization in 16 languages",
     thumbnail: "/project.png",
-    techStack: ["HTML", "CSS", "JavaScript", "TypeScript", "React.JS", "React Router", "React Query"],
+    techStack: ["React.JS", "TypeScript", "React Router", "Redux Toolkit", "i18n"],
   },
   {
     id: "2",
-    title: "Title 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus, eaque recusandae libero at rem aliquid fugiat beatae earum velit id accusamus facilis ea, itaque soluta culpa reprehenderit illum corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus, eaque recusandae libero at rem aliquid fugiat beatae earum velit id accusamus facilis ea, itaque soluta culpa reprehenderit illum corrupti!",
+    title: "Dasboard for Roze Moon",
+    description: "A dashboard for ",
     thumbnail: "/project.png",
     techStack: ["HTML", "CSS", "JavaScript", "TypeScript", "Next.JS", "Zustand", "next-intl"],
   },
